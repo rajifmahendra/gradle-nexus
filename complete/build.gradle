@@ -7,7 +7,8 @@ mainClassName = 'hello.HelloWorld'
 // tag::repositories[]
 repositories { 
     maven {
-        url "http://localhost:8081/repository/maven-central-proxy/"
+        url "http://nexusdemo.izenoondemand.com:8081/repository/lab-gradle-testing/"
+        allowInsecureProtocol = true
         credentials {
             username 'admin'
             password '1Z3n0N3XuS9876'
