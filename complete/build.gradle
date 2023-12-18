@@ -6,7 +6,13 @@ mainClassName = 'hello.HelloWorld'
 
 // tag::repositories[]
 repositories { 
-    mavenCentral() 
+    maven {
+        url "http://localhost:8081/repository/maven-central-proxy/"
+        credentials {
+            username 'admin'
+            password '1Z3n0N3XuS9876'
+        }
+    }
 }
 // end::repositories[]
 
